@@ -1,0 +1,38 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/form-price";
+@import "./components/partners";
+@import "./components/form-consultation";
+@import "./components/form-smeta";
+
+//@import "./components/self-presentation";
+@import "./components/guarantee";
+@import "./components/problems";
+@import "./components/projects";
+@import "./components/services";
+//@import "./components/laboratory";
+//@import "./components/presentation";
+//@import "./components/quiz";
+
+//@import "./components/certification";
+//@import "./components/products";
+//@import "./components/video-reports";
+//@import "./components/gallery";
+//@import "./components/form";
+@import "./components/director";
+//@import "./components/trademark";
+@import "./components/contacts";
+@import "./components/footer";
+//@import "./components/modal";
+
+.page__body {
+  background-color: #f1f1f1;
+}

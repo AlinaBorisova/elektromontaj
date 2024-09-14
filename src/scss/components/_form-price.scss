@@ -1,0 +1,315 @@
+.form {
+  margin: 75px 15px;
+  @include mobile {
+    margin: 30px 15px;
+  }
+
+  &__container {
+    max-width: 1670px;
+    border-radius: 40px;
+    background: url(https://nsr-svet.ru/img/bg-form.webp) center / cover #cbcbcb;
+  }
+
+  &__wrap {
+    max-width: 1440px;
+    position: relative;
+    margin: 0 auto;
+    padding: 90px 0;
+    @include mobile {
+      padding: 30px 0;
+    }
+  }
+
+  &__title {
+    max-width: 700px;
+    position: relative;
+    margin-left: 0;
+    text-align: left;
+    margin-bottom: 55px;
+    color: #fff;
+    z-index: 1;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &_descr {
+    position: relative;
+    max-width: 770px;
+    margin-left: 0;
+    margin-bottom: 70px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #fff;
+    text-align: left;
+    z-index: 1;
+  }
+
+  &__img {
+    position: absolute;
+    max-width: 830px;
+    bottom: -40px;
+    right: -120px;
+
+    @include mobile {
+      position: static;
+      width: 100%;
+      margin-bottom: -30px;
+    }
+  }
+
+  &__form {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 30px;
+    padding: 45px 30px;
+    margin-bottom: auto;
+    background-color: #f1f0f5;
+
+    @include mobile {
+      -ms-grid-row: 2;
+      grid-row: 2;
+      gap: 20px;
+      padding: 15px;
+      max-width: 100%;
+      margin-top: 0;
+      border-radius: 20px;
+    }
+
+    &-title {
+      font-weight: bold;
+      font-size: 24px;
+    }
+  }
+
+  &__form-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+
+    @include mobile {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .form__form-label {
+    width: 100%;
+    min-height: 95px;
+  }
+  .form__form-input {
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #fbfbfb;
+    border: 1px solid #cfcfcf;
+  }
+  .form__btn {
+    width: 100%;
+    min-height: 95px;
+  }
+  .custom-checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5px;
+    align-self: center;
+
+    &__content {
+      color: #000;
+      font-size: 13px;
+    }
+  }
+
+  &__copyright {
+    font-size: 12px;
+    margin-left: 15px;
+    &-link {
+      color: #000;
+      border-bottom: 1px solid #000;
+    }
+  }
+
+  &__example {
+    position: absolute;
+    top: 80px;
+    right: 400px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: var(--main-color);
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 15px;
+
+    @include mobile {
+      top: 120px;
+      right: 20px;
+      width: 150px;
+      height: 150px;
+    }
+    &-text {
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      text-decoration: underline;
+      text-align: center;
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+    &-img {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border: 4px solid #fff;
+      border-radius: 100px;
+      @include mobile {
+        width: 40px;
+        height: 40px;
+      }
+
+      svg {
+        width: 30px;
+        height: 30px;
+        @include mobile {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+}
+
+
+//.price-select {
+//  display: -webkit-box;
+//  display: -ms-flexbox;
+//  display: flex;
+//  -webkit-box-align: center;
+//  -ms-flex-align: center;
+//  align-items: center;
+//  width: 100%;
+//  min-height: 85px;
+//  height: 100%;
+//  -webkit-box-sizing: border-box;
+//  box-sizing: border-box;
+//  border-top-left-radius: 10px;
+//  border-top-right-radius: 10px;
+//  padding: 10px 15px;
+//  background-color: #fbfbfb;
+//  border: 1px solid #cfcfcf;
+//  font-size: 16px;
+//  color: #000;
+//  cursor: pointer;
+//
+//  &__wrapper {
+//    position: relative;
+//    -webkit-user-select: none;
+//    -moz-user-select: none;
+//    -ms-user-select: none;
+//    user-select: none;
+//    width: 100%;
+//  }
+//  :not(.price-select--open) {
+//    border-bottom-left-radius: 10px;
+//    border-bottom-right-radius: 10px;
+//  }
+//  &--changed {
+//    border-color: #cfcfcf;
+//  }
+//  &__options {
+//    position: absolute;
+//    display: block;
+//    width: 100%;
+//    top: 100%;
+//    left: 0;
+//    border-left: 1px solid #cfcfcf;
+//    border-right: 1px solid #cfcfcf;
+//    border-bottom: 1px solid #cfcfcf;
+//    border-bottom-left-radius: 10px;
+//    border-bottom-right-radius: 10px;
+//    background: #fbfbfb;
+//    opacity: 0;
+//    visibility: hidden;
+//    pointer-events: none;
+//    z-index: 2;
+//  }
+//  &__option {
+//    width: 100%;
+//    display: -webkit-box;
+//    display: -ms-flexbox;
+//    display: flex;
+//    -webkit-box-orient: horizontal;
+//    -webkit-box-direction: normal;
+//    -ms-flex-direction: row;
+//    flex-direction: row;
+//    -webkit-box-pack: start;
+//    -ms-flex-pack: start;
+//    justify-content: flex-start;
+//    -webkit-box-align: center;
+//    -ms-flex-align: center;
+//    align-items: center;
+//    gap: 14px;
+//    padding: 15px;
+//    border-radius: 10px;
+//    position: static;
+//    left: 1px;
+//    top: 1px;
+//    color: #000;
+//    cursor: pointer;
+//    background-color: #fbfbfb;
+//  }
+//  &--open {
+//    border: 1px solid #cfcfcf;
+//  }
+//  &__option img, .price-social-selected-image {
+//    width: 22px;
+//    height: 22px;
+//  }
+//  .price-select--open .price-select__options {
+//    opacity: 1;
+//    visibility: visible;
+//    pointer-events: all;
+//  }
+//  price-select--open .select__arrow {
+//    -webkit-transform: rotate(180deg);
+//    -ms-transform: rotate(180deg);
+//    transform: rotate(180deg);
+//  }
+//
+//}
+
+
+
+
