@@ -1,8 +1,8 @@
 // import './components/show-title.js';
 // import './components/widget.js';
-// import './components/phone-mask.js';
+import './components/phone-mask.js';
 // import './components/time.js';
-// import './components/validate-email.js';
+import './components/validate-email.js';
 // import './components/tabs.js';
 
 // import './components/quiz.js';
@@ -10,7 +10,7 @@
 //
 import './components/copy-link.js';
 
-import './components/form-smeta.js';
+// import './components/form-smeta.js';
 import './components/projects.js';
 // import './components/form-consultation.js';
 // import './components/form-trademark.js';

@@ -1,9 +1,10 @@
 .footer {
+  position: relative;
   margin: 15px 0 50px 0;
 
   &__container {
-    background-color: #fff;
-    max-width: 1570px;
+    background-color: #f1f1f1;
+    max-width: 1670px;
     border-radius: 20px;
     padding: 60px 0;
   }
@@ -108,6 +109,17 @@
       font-size: 12px;
     }
   }
+}
+
+.vypolnennye-proekty-page .footer__bg {
+  position: absolute;
+  inset: 0;
+  top: -300px;
+  bottom: -100px;
+  margin: 0 auto;
+  background-color: #fff;
+  z-index: -3;
+  //border-radius: 100px;
 }
 
 

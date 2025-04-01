@@ -16,7 +16,8 @@ export const validateForms = (selector, rules, afterSend) => {
   }
 
   if (telSelector) {
-    const inputMask = new Inputmask('+7 (999) 999-99-99');
+    const inputMask = new Inputmask('+7 (h99) 999-99-99');
+    inputMask.mask.definitions['h'] = "[0-6-9]";
     inputMask.mask(telSelector);
 
     for (let item of rules) {

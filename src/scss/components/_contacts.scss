@@ -53,4 +53,8 @@
   margin: 0 auto;
   border-radius: 50px;
   overflow: hidden;
+  @include mobile {
+    border-radius: 30px;
+  }
 }
+

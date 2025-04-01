@@ -1,7 +1,5 @@
 .about {
   position: relative;
-  //padding-bottom: 50px;
-  margin: 75px 0;
 
   @include mobile {
     padding-bottom: 0;
@@ -67,7 +65,8 @@
     }
 
     &-btn {
-      max-width: 400px;
+      max-width: 350px;
+      min-height: 85px;
     }
   }
   &__gallery {
@@ -90,6 +89,8 @@
       &-img img {
         height: 100%;
         border-radius: 20px;
+        object-fit: cover;
+        width: 100%;
       }
     }
   }
@@ -109,6 +110,7 @@
       @include mobile {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+        padding-top: 40px;
       }
     }
     &-item {
@@ -137,5 +139,8 @@
         height: 70px;
       }
     }
+  }
+  &__title-wrap {
+    margin-top: 75px;
   }
 }

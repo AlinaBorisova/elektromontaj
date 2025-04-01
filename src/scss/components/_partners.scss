@@ -39,3 +39,14 @@
     }
   }
 }
+
+.page-main .partners__bg {
+  position: absolute;
+  inset: 0;
+  top: -300px;
+  bottom: -300px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  z-index: -1;
+  border-radius: 100px;
+}

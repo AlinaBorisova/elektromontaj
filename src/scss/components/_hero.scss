@@ -18,7 +18,7 @@
     @include mobile {
       top: -200px;
       bottom: 0;
-      border-radius: 0;
+      border-radius: 30px;
     }
 
     &-img {
@@ -86,5 +86,20 @@
   }
 }
 
+.thanks .hero__title-wrap {
+  margin-bottom: 50px;
+}
 
+.hero__bread-crumbs {
+  margin-bottom: 10px;
+  color: #fff;
+}
+.hero__bread-crumbs a {
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .hero__bread-crumbs {
+    font-size: 12px;
+  }
+}
 

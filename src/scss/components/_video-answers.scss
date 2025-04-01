@@ -1,0 +1,139 @@
+.answers {
+  position: relative;
+  padding: 75px 0;
+  @include mobile {
+    padding: 15px 0;
+  }
+  &__bg {
+    max-width: 1870px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    border-radius: 100px;
+    z-index: -1;
+    overflow: hidden;
+    background: #f1f1f1;
+    @include mobile {
+      border-radius: 30px;
+    }
+  }
+  &__list {
+    display: grid;
+    display: -ms-grid;
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    @include mobile {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+  &__item {
+    padding: 30px;
+    border-radius: 20px;
+    background: #fff;
+    @include mobile {
+      padding: 15px;
+    }
+    &-link {
+      display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    &-img {
+      display:block;
+      height:100%;
+      width: 100%;
+    }
+    &-btn {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+    &-btn::before {
+      content: "";
+      position: absolute;
+      margin-left: 5px;
+      width: 0;
+      height: 0;
+      border-top: 20px solid transparent;
+      border-left: 35px solid #fff;
+      border-bottom: 20px solid transparent;
+      border-radius: 5px;
+      z-index: 11;
+    }
+    &-btn svg{
+      background: var(--main-color);
+      border-radius: 50%;
+      -webkit-animation: 15s linear infinite rotate;
+      animation: 15s linear infinite rotate;
+      -webkit-box-shadow: 0 0 20px 0 rgba(255, 255, 255, .2) inset;
+      box-shadow: 0 0 20px 0 rgba(255, 255, 255, .2) inset;
+      @include mobile {
+        width: 70px;
+        height: 70px;
+      }
+    }
+    &-btn #textPath, &-btn #textPath-mobile {
+      fill: none;
+    }
+    &-btn text {
+      line-height: 1;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      font-size: 8px;
+      fill: #fff;
+      @include mobile {
+        display: none;
+      }
+    }
+    &-title {
+      font-weight: 600;
+      font-size: 24px;
+      margin: 40px 0 20px;
+      line-height: 1.5;
+      @include mobile {
+        font-size: 22px;
+        margin: 20px 0 10px;
+      }
+    }
+  }
+}
+
+
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+

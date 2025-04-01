@@ -1,5 +1,5 @@
 .form {
-  margin: 75px 15px;
+  margin: 75px 0;
   @include mobile {
     margin: 30px 15px;
   }
@@ -7,7 +7,10 @@
   &__container {
     max-width: 1670px;
     border-radius: 40px;
-    background: url(https://nsr-svet.ru/img/bg-form.webp) center / cover #cbcbcb;
+    background: url(https://conversion-test.ru/img/bg__form.jpg) center / cover #cbcbcb;
+    @include mobile {
+      border-radius: 30px;
+    }
   }
 
   &__wrap {
@@ -89,6 +92,9 @@
     &-title {
       font-weight: bold;
       font-size: 24px;
+      @include mobile {
+        font-size: 19px;
+      }
     }
   }
 
@@ -109,6 +115,9 @@
   .form__form-label {
     width: 100%;
     min-height: 95px;
+    @include mobile {
+      min-height: 80px;
+    }
   }
   .form__form-input {
     padding: 30px 20px;
@@ -121,6 +130,9 @@
   .form__btn {
     width: 100%;
     min-height: 95px;
+    @include mobile {
+      min-height: 80px;
+    }
   }
   .custom-checkbox {
     display: -webkit-box;
@@ -137,7 +149,7 @@
 
   &__copyright {
     font-size: 12px;
-    margin-left: 15px;
+    margin-left: 5px;
     &-link {
       color: #000;
       border-bottom: 1px solid #000;
@@ -211,6 +223,19 @@
 
 }
 
+.form-consultation__bg {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  bottom: 50px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  z-index: -1;
+  border-radius: 100px;
+}
+.form-consultation {
+  position: relative;
+}
 
 
 
